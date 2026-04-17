@@ -11,3 +11,5 @@ aprendo markdown aquí https://www.markdownguide.org/cheat-sheet/
 # Encargo 17 Abril - Comentar una película/episodios serie
 
 ## Serie: Blackmirror - Episodios S03E04 San Junipero
+
+Kelly y Yorkie se conocen en un club de San Junipero, Kelly le coquetea a Yorkie, pero esta es bastante más tímida y trata de reprimir su sexualidad y la situación 
