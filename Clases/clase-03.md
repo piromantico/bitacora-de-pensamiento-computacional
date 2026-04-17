@@ -12,4 +12,4 @@ aprendo markdown aquí https://www.markdownguide.org/cheat-sheet/
 
 ## Serie: Blackmirror - Episodios S03E04 San Junipero
 
-Kelly y Yorkie se conocen en un club de San Junipero, Kelly le coquetea a Yorkie, pero esta es bastante más tímida y trata de reprimir su sexualidad y la situación 
+Kelly y Yorkie se conocen en un club de San Junipero, Kelly le coquetea a Yorkie, pero esta es bastante más tímida y trata de reprimir su sexualidad y la situación. Luego de este encuentro Yorgie intenta cambiar su apariencia para parecer un poco más "cool" o auténtica
