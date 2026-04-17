@@ -10,4 +10,4 @@ aprendo markdown aquí https://www.markdownguide.org/cheat-sheet/
 
 # Encargo 17 Abril - Comentar una película/episodios serie
 
-## Serie: Blackmirror - Episodios
+## Serie: Blackmirror - Episodios S03E04 San Junipero
