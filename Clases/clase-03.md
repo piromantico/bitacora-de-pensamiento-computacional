@@ -1,6 +1,6 @@
-# clase-03
+# Clase-03
 
-## soy un encabezado 2
+## Soy un encabezado 2
 
 lorem ipsum dolor sit amet
 
