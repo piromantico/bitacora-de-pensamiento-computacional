@@ -113,6 +113,120 @@ Define el comportamiento de cada nube como objeto independiente. constructor() s
 
 **Problema a resolver a través de la IA**
 
-Cuándo se nos ocurrió la idea de alternar entre día y noche, inicialmente el fondo sólo sería azul de noche, y un tono más claro de día, luego añadimos el sol y la luna, luego pensamos en añadir elementos en movimiento: las nubes, ¿Cómo las creamos y hacemos que se muevan cómo nubes?, luego llegó la idea de añadir estrellas ¿Son millones de puntos que poner a mano? ¿Siempre en el mismo lugar?. A través de la IA pudimos darle más dinamismo y vida a nuestro código, a continuación se presentan los prompts utilizados:
+Cuándo se nos ocurrió la idea de alternar entre día y noche, inicialmente el fondo sólo sería azul de noche, y un tono más claro de día, luego añadimos el sol y la luna, luego pensamos en añadir elementos en movimiento: las nubes, ¿Cómo las creamos y hacemos que se muevan cómo nubes?, luego llegó la idea de añadir estrellas ¿Son millones de puntos que poner a mano? ¿Siempre en el mismo lugar? por último también necesitamos asistencia respecto al reinicio del código junto con la canción. A través de la IA pudimos darle más dinamismo y vida a nuestro código, a continuación se presentan los prompts utilizados:
+
+**"quiero un cielo con nubes en movimiento que se desplacen lentamente de un lado a otro"**
+
+**Respuesta de ChatGPT:**
+
+```
+let nubes = [];
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  // crear varias nubes
+  for (let i = 0; i < 8; i++) {
+    nubes.push({
+      x: random(width),
+      y: random(50, 250),
+      tamaño: random(60, 120),
+      velocidad: random(0.2, 1)
+    });
+  }
+}
+
+function draw() {
+  background(120, 180, 255);
+  // dibujar nubes
+  for (let nube of nubes) {
+    fill(255, 220);
+    noStroke();
+    ellipse(nube.x, nube.y, nube.tamaño, nube.tamaño * 0.6);
+    ellipse(nube.x + 30, nube.y + 10, nube.tamaño * 0.7, nube.tamaño * 0.5);
+    ellipse(nube.x - 30, nube.y + 10, nube.tamaño * 0.7, nube.tamaño * 0.5);
+    // movimiento
+    nube.x += nube.velocidad;
+    // reaparece al otro lado
+    if (nube.x > width + 100) {
+      nube.x = -100;
+    }
+  }
+}
+```
+
+**"mi cancion dura 34 segundos, quiero que una vez terminen los 34, se pare, se quede en silencio, y el codigo se reinicie"**
+
+**Respuesta de Claude
+
+```
+function draw() {
+  if (musicaIniciada && millis() - tiempoInicio > 34000) {
+    cancion.stop();
+    musicaIniciada = false;
+  }
+  if (musicaIniciada) {
+    let segundos = (millis() - tiempoInicio) / 1000;
+    lyricIndex = floor(segundos / (34 / lyrics.length)) % lyrics.length;
+    text(lyrics[lyricIndex], width / 2, height * 0.12);
+  } else {
+    text("HAZ CLICK PARA COMENZAR", width / 2, height * 0.12);
+  }
+}
+function mousePressed() {
+  if (!cancion.isPlaying()) {
+    cancion.play();
+    cancion.setVolume(0.5);
+    musicaIniciada = true;
+    tiempoInicio = millis();
+  }
+}
+```
+
+**"cómo hago para alternar entre día y noche con un click**
+
+**Respuesta de ChatGPT:**
+
+```
+let modoNoche = true;
+function draw() {
+  if (modoNoche) {
+    background(10, 10, 30); // noche
+  } else {
+    background(255, 220, 180); // día
+  }
+}
+function mousePressed() {
+  // cambia entre true y false
+  modoNoche = !modoNoche;
+}
+```
+
+**""agrega estrellas pequeñas al cielo nocturno"**
+
+```
+let estrellas = [];
+
+for (let i = 0; i < 300; i++) {
+  
+  estrellas.push({
+    x: random(width),
+    y: random(height),
+    s: random(1, 4)
+  });
+
+  //se encarga de generar las estrellas en posiciones y tamaños randoms
+  //cada vuelta crea una nueva estrella y la mete al array
+
+}
+```
+
+```
+fill(255, 220);
+
+for (let e of estrellas) {
+  circle(e.x, e.y, e.s);
+
+  //recorre el array de estrellas y dibuja cada una
+}
+```    
 
 
