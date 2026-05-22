@@ -2,9 +2,9 @@
 
 ## Integrantes del grupo
 
-Alejandro Fernández
+Alejandro Fernández - https://github.com/piromantico
 
-Constanza Cáceres
+Constanza Cáceres - https://github.com/fullpiketia
 
 
 ![esquemas juveniles](esquemas-juveniles.jpg)
