@@ -50,7 +50,7 @@ En una instancia pensamos en agregar a una pareja en el asiento, o una sola pers
 Descubrimos que se podían incorporar audios/música, de forma loca, primero habíamos pensado que sólo se podía con bibliotecas de audio de p5, pero con asistencia de **ChatGPT** pudimos llegar al hallazgo de que podíamos utilizar cualquier pieza de audio, he ahí donde finalmente nace la idea de utilizar el audio y transformar este canvas junto con el código en una especie de video de letras de la canción.
 
 
-### Explicación del código
+## Explicación del código
 
 **Bloque de código 1: Variables y configuración inicial**
 
@@ -107,8 +107,12 @@ Es el centro del código, draw() es ejecutado constantemente y dibuja todo en el
 Define el comportamiento de cada nube como objeto independiente. constructor() se encarga de asignarle a cada nube su posición, velocidad y tamaño aleatorio al nacer, la primera vez que se corre el código. update() las mueve hacia la derecha cada frame y la devuelve por la izquierda al salirse completamente del canvas, ni antes ni después, display() las dibuja con tres elipses superpuestos, los cuáles cambian de color según si es de día o de noche.
 
 
-#### Declaración del uso de IA
+## Declaración del uso de IA
 
 **IAs utilizadas:** ChatGPT y Claude gratuitas
+
+**Problema a resolver a través de la IA**
+
+Cuándo se nos ocurrió la idea de alternar entre día y noche, inicialmente el fondo sólo sería azul de noche, y un tono más claro de día, luego añadimos el sol y la luna, luego pensamos en añadir elementos en movimiento: las nubes, ¿Cómo las creamos y hacemos que se muevan cómo nubes?, luego llegó la idea de añadir estrellas ¿Son millones de puntos que poner a mano? ¿Siempre en el mismo lugar?. A través de la IA pudimos darle más dinamismo y vida a nuestro código, a continuación se presentan los prompts utilizados:
 
 
