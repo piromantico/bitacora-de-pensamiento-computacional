@@ -54,37 +54,19 @@ Descubrimos que se podían incorporar audios/música, de forma loca, primero hab
 
 **Bloque de código 1: Variables y configuración inicial**
 
-`let estrellas = [];`
-
-
-`let nubes = [];`
-
-
-`let modoNoche = true;`
-
-
-`let cancion;`
-
-
-`let lyricIndex = 0;`
-
-
-`let musicaIniciada = false;`
-
-
-`let velocidadLyrics = 475;`
-
-
-`let tiempoInicio = 0;`
-
-
-`let lyrics = [ ... ];`
-
-
-`function preload() { ... }`
-
-
-`function setup() { ... }`
+```
+let estrellas = [];
+let nubes = [];
+let modoNoche = true;
+let cancion;
+let lyricIndex = 0;
+let musicaIniciada = false;
+let velocidadLyrics = 475;
+let tiempoInicio = 0;
+let lyrics = [ ... ];
+function preload() { ... }
+function setup() { ... }
+```
 
 En este bloque se declaran todos las variables que el sketch necesita 'grabar' para posteriormente ser llamados: los arrays de estrellas y nubes, el modo del fondo (día/noche), la canción y los lyrics, preload() carga el audio antes de cargarlo definitivamente y setup() crea el canvas generando las estrellas y nubes por primera vez.
 
