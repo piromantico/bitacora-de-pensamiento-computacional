@@ -4,3 +4,4 @@
 
 Alejandro Fernández
 Constanza Cáceres
+![esquemas juveniles](esquemas juveniles.png)
