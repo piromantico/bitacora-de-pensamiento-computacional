@@ -181,7 +181,7 @@ function mousePressed() {
 }
 ```
 
-**"cómo hago para alternar entre día y noche con un click**
+**"cómo hago para alternar entre día y noche con un click"**
 
 **Respuesta de ChatGPT:**
 
@@ -200,7 +200,7 @@ function mousePressed() {
 }
 ```
 
-**""agrega estrellas pequeñas al cielo nocturno"**
+**"agrega estrellas pequeñas al cielo nocturno"**
 
 ```
 let estrellas = [];
