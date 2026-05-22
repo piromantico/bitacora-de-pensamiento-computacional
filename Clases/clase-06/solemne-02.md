@@ -72,13 +72,11 @@ En este bloque se declaran todos las variables que el sketch necesita 'grabar' p
 
 **Bloque de código 2: Visualidad e interacción
 
-`function draw() { ... }`
-
-
-`function mousePressed() { ... }`
-
-
-`function dibujarBanca() { ... }`
+```
+function draw() { ... }
+function mousePressed() { ... }
+function dibujarBanca() { ... }
+```
 
 
 Es el centro del código, draw() es ejecutado constantemente y dibuja todo en el lienzo: el fondo de día o noche, la luna o el sol, las estrellas, las nubes, el suelo, la banca y los lyrics, un poco cómo Dios, solo que no en 7 días, solo en un click, o dos. mousePressed() detecta cada click para alternar entre día y noche e iniciar la canción. dibujarBanca() dibuja la banca central.
